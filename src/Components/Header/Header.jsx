@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom"
+import logo from "../../assets/images/logo 2.png"
+import { Header1, Ul } from "./style.js"
 
 export default function Header() {
     return (
 
-    <header>
-        <img src="" alt="logomarca" />
+    <Header1>
+        <img src={logo} alt="logomarca" />
         <nav>
-            <ul>
+            <Ul>
                 <li>
                     <Link to="/">Home</Link>
                 </li>
@@ -16,8 +18,8 @@ export default function Header() {
                 <li>
                     <Link to="/sobre">Sobre</Link>
                 </li>
-            </ul>
+            </Ul>
         </nav>
-    </header>
+    </Header1>
     )
 }
