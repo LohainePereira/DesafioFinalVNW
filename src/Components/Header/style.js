@@ -4,7 +4,7 @@ export const Header1 = styled.header`
 display: flex;
 align-items: center;
 padding: 20px;
-height: 20vh;
+height: 10vh;
 `
   
 
