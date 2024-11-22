@@ -10,11 +10,11 @@ export default function Sobre(){
             <h3>PREPARAÇÃO</h3>
             <h2>Níveis de torra</h2>
             <p>
-            Qual a torra que prefere? Starbucks® Torra Clara, Torra Média ou
+            Qual a torra que você prefere? Aqui no Starbucks® possuimos Torra Clara, Torra Média ou
             Torra Escura? Estas sãos as torras que fazem parte dos níveis de
             torra Starbucks®
             </p>
-            <Button>SAIBA MAIS</Button>
+            <Button on Click={() => alert("Mais informações em breve!")}>SAIBA MAIS</Button>
         </Div>
         </Section>
     );
