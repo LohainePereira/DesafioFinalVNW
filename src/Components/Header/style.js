@@ -18,12 +18,12 @@ gap: 80px;
 li {
     a {
       text-decoration: none;
-      color: #333;
+      color: ##14764e;
       font-size: 20px;
       transition: color 0.3s;
 
       &:hover {
-        color: #007bff;
+        color: palevioletred;
       }
 
       &.active {

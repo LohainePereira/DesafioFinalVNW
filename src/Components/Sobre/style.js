@@ -5,7 +5,7 @@ export const Section = styled.section`
   align-items: center;
   justify-content: space-around;
   height: 80vh;
-  color: #1e3932;
+  color: #14764e;
 
    @media (max-width: 768px) {
     flex-direction: column; 
