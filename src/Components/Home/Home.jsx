@@ -5,10 +5,20 @@ import copoPlaranja from "../../assets/images/laranja P.png"
 import copoPvermelho from "../../assets/images/vermelho P.png"
 import copoPamarelo from "../../assets/images/amarelo P.png"
 import Fundoverde from "../../assets/images/Ellipse verde.png"
+import Fundoamarelo from "../../assets/images/Ellipse amarela.png"
+import Fundovermelho from "../../assets/images/Ellipse vermelha.png"
 import {useState} from "react"
 import {Mainstyle} from "./style.js"
 
     export default function Home(){
+       const [copoGrande, setCopoGrande] = useState(copoLaranja);
+       const [fundo, setFundo] = useState(Fundoverde);
+
+       const modificarStyle = (cor, imagem) => {
+        setCopoGrande(cor);
+        setFundo(imagem);
+      };
+    
     return(
         <Mainstyle>
             <section>
@@ -21,14 +31,14 @@ import {Mainstyle} from "./style.js"
             </p>
             <button>SAIBA MAIS</button>
             <div>
-                <img src={copoPlaranja}  alt="copo Laranja pequeno" />
-                <img src={copoPvermelho}  alt="copo vermelho pequeno" />
-                <img src={copoPamarelo}  alt="copo amarelo pequeno" />
+                <img src={copoPlaranja}  alt="copo Laranja pequeno"  onClick={() => modificarStyle(copoLaranja,Fundoverde)} />
+                <img src={copoPvermelho}  alt="copo vermelho pequeno" onClick={() => modificarStyle(copoVermelho, Fundovermelho)}/>
+                <img src={copoPamarelo}  alt="copo amarelo pequeno" onClick={() => modificarStyle(copoAmarelo, Fundoamarelo)}/>
             </div>
             </section>
             <section>
-                <img src={copoLaranja} alt="copo laranja grande" />
-                <img src={Fundoverde} alt="" />
+                <img src={copoGrande} alt="copo laranja grande" />
+                <img src={fundo} alt="" />
             </section>
         </Mainstyle>
        
