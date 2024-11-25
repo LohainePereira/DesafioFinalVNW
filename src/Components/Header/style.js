@@ -18,7 +18,7 @@ gap: 80px;
 li {
     a {
       text-decoration: none;
-      color: ##14764e;
+      color: #14764e;
       font-size: 20px;
       transition: color 0.3s;
 

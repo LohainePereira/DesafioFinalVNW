@@ -6,7 +6,12 @@ export const Section = styled.section`
   background-color: #1E3932;
   justify-content: center;
   align-items: center;
-
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left:0%
 `;
 
 export const Div = styled.div`

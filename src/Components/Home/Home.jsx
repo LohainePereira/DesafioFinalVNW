@@ -9,6 +9,9 @@ import Fundoamarelo from "../../assets/images/Ellipse amarela.png"
 import Fundovermelho from "../../assets/images/Ellipse vermelha.png"
 import {useState} from "react"
 import {Mainstyle} from "./style.js"
+import {Divcopinhos} from "./style.js"
+import {Copao} from "./style.js"
+import {Fundo} from "./style.js"
 
     export default function Home(){
        const [copoGrande, setCopoGrande] = useState(copoLaranja);
@@ -30,15 +33,15 @@ import {Mainstyle} from "./style.js"
             A Starbucks oferece uma variedade de cafés de alta qualidade. Alguns dos cafés mais populares incluem o Caffè Americano, o Cappuccino, o Latte Macchiato e o Espresso. Além disso, a Starbucks oferece bebidas quentes e frias, doces diferenciados e sanduíches.
             </p>
             <button>SAIBA MAIS</button>
-            <div>
+            <Divcopinhos>
                 <img src={copoPlaranja}  alt="copo Laranja pequeno"  onClick={() => modificarStyle(copoLaranja,Fundoverde)} />
                 <img src={copoPvermelho}  alt="copo vermelho pequeno" onClick={() => modificarStyle(copoVermelho, Fundovermelho)}/>
                 <img src={copoPamarelo}  alt="copo amarelo pequeno" onClick={() => modificarStyle(copoAmarelo, Fundoamarelo)}/>
-            </div>
+            </Divcopinhos>
             </section>
             <section>
-                <img src={copoGrande} alt="copo laranja grande" />
-                <img src={fundo} alt="" />
+                <Copao src={copoGrande} alt="copo laranja grande" />
+                <Fundo src={fundo} alt="" />
             </section>
         </Mainstyle>
        
