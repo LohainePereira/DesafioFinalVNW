@@ -28,6 +28,16 @@ margin: 0;
   letter-spacing: -0.5px;  
   font-size: 1.2rem; 
   color: black;
+
+  @media (max-width: 768px) {
+      font-size: 1rem;
+      max-width: 80%; /* Reduz o tamanho para tablets */
+    }
+
+    @media (max-width: 480px) {
+      font-size: 0.9rem; /* Reduz ainda mais para celulares */
+      max-width: 90%;
+    }
   }
 
  button {
@@ -49,7 +59,15 @@ margin: 0;
   &:focus {
     outline: 2px solid #025b36; 
   }
-`
+     @media (max-width: 768px) {
+      padding: 8px 25px;
+    }
+
+    @media (max-width: 480px) {
+      padding: 6px 20px;
+      font-size: 0.8rem;
+    }
+`;
 export const Divcopinhos = styled.div`
 cursor: pointer;
 display: flex;
@@ -59,6 +77,19 @@ position: relative;
 left: 5rem;
 top: 3rem;
 transition: all 0.8s ease;
+
+@media (max-width: 768px) {
+    width: 90%;
+    justify-content: space-between;
+    left: 0;
+    top: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column; /* Empilha os itens em celulares */
+    align-items: center;
+    width: 100%;
+  }
 `
 export const Copao = styled.img`
 position: absolute;
@@ -67,6 +98,17 @@ z-index: 2;
 top: 43%;
 width: 350px;
 
+@media (max-width: 768px) {
+    width: 250px;
+    left: 60%;
+    top: 40%;
+  }
+
+  @media (max-width: 480px) {
+    width: 200px;
+    left: 50%;
+    top: 35%;
+  }
 `;
 
 export const Fundo = styled.img`
@@ -78,5 +120,17 @@ export const Fundo = styled.img`
   transition: transform 0.3s ease;
   width: 469px;
   top:37.5%;
+
+   @media (max-width: 768px) {
+    width: 300px;
+    left: 75%;
+    top: 35%;
+  }
+
+  @media (max-width: 480px) {
+    width: 250px;
+    left: 70%;
+    top: 30%;
+  }
 `;
 
